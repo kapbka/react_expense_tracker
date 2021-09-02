@@ -26,9 +26,18 @@ const App = () => {
 
   const addExpenseHandler = (expense) => {
     //console.log(expense);
-    
+
   }
 
+  // Imperative approach
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', {}, "Let's get started!"),
+  //   React.createElement(Expenses, { items: expenses })
+  // );
+
+  // declarative approach
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler}/>
